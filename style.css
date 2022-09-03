@@ -1,5 +1,6 @@
 html {
   font-family: 'Fredoka One', cursive;
+  background-image: url(images/adventuretime.webp);
   padding: 0;
   margin: 0;
 }
@@ -22,6 +23,10 @@ h1 {
   width: 700px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  font-size: 50px;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
 }
 
 main {
@@ -37,6 +42,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
 }
 
 #grid-container {
@@ -44,7 +51,7 @@ main {
   grid-template-columns: repeat(16, 1fr);
   width: 600px;
   height: 600px;
-  border: 1px solid black;
+  border: 2px solid black;
   justify-content: center;
   background-color: white;
 }
@@ -60,4 +67,43 @@ main {
   padding: 15px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+input[type=color] {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+#controls-container {
+  width: 604px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#grid-size-out {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+#grid-size-in {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+#reset {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  border: 2px solid black;
 }

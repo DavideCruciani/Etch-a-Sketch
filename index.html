@@ -10,12 +10,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header><h1>Etch a Sketch</h1></header>
+  <header><h1>BMO</h1></header>
   <main>
     <div id="container-background">
       <div id="grid-container"></div>
     </div>
-    <div id="controls"></div>
+    <div id="controls">
+      <div id="controls-container">
+        <input type='color' value='#ff0000' id='colorpicker'>
+        <button id="grid-size-in">
+          <img src="images/zoomIn.png"/>
+        </button>
+        <button id="grid-size-out">
+          <img src="images/zoomOut.png"/>
+        </button>
+        <button id="reset">
+          <img src="images/reset.png">
+        </button>
+      </div>
+    </div>
   </main>
   <script src="javascript.js"></script>
 </body>
