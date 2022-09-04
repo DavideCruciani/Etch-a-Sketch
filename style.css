@@ -1,8 +1,9 @@
 html {
   font-family: 'Fredoka One', cursive;
-  background-image: url(images/adventuretime.webp);
+  background-image: url(images/adventuretimeBlured.jpg);
   padding: 0;
   margin: 0;
+  min-width: 775px;
 }
 
 body {
@@ -51,7 +52,7 @@ main {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   width: 600px;
-  height: 600px;
+  height: 570px;
   border: 2px solid black;
   justify-content: center;
   background-color: white;
@@ -107,4 +108,10 @@ input[type=color] {
   width: 100px;
   cursor: pointer;
   border: 2px solid black;
+}
+
+footer {
+  text-align: center;
+  padding: 8px;
+  color: black;
 }
