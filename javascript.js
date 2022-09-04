@@ -1,3 +1,4 @@
+
 /* creating the grid */
 
 const container = document.querySelector('#grid-container');
@@ -12,11 +13,12 @@ var gridBox = document.querySelectorAll('#gridBox')
 
 gridBox.forEach(box => {
   box.addEventListener('mouseover', ()=>{
-    box.setAttribute('style', 'background-color:red;');
+    ColorSelection();
+    box.setAttribute('style', `background-color:${ColorPicker};`);
   })
 });
 
-/* creating button to reset the grid */
+/* setting button to reset the grid */
 
 const resetButton = document.querySelector('#reset')
 
@@ -27,7 +29,7 @@ resetButton.addEventListener('click', () => {
   });
 })
 
-/* creating the Zoom Out Button */
+/* setting the Zoom Out Button */
 
 const zoomOutButton = document.querySelector('#grid-size-out')
 
@@ -45,7 +47,8 @@ zoomOutButton.addEventListener('click', () => {
   gridBox.forEach(box => {
     box.removeAttribute('style');
     box.addEventListener('mouseover', ()=>{
-      box.setAttribute('style', 'background-color:red;');
+      ColorSelection();
+      box.setAttribute('style', `background-color:${ColorPicker};`);
     })
   });
 
@@ -58,7 +61,7 @@ zoomOutButton.addEventListener('click', () => {
 
 });
 
-/* creating the Zoom In Button */
+/* setting the Zoom In Button */
 
 const zoomInButton = document.querySelector('#grid-size-in')
 
@@ -81,7 +84,8 @@ zoomInButton.addEventListener('click', () => {
 
     gridBox.forEach(box => {
       box.addEventListener('mouseover', ()=>{
-        box.setAttribute('style', 'background-color:red;');
+        ColorSelection();
+        box.setAttribute('style', `background-color:${ColorPicker};`);
       })
 
     });
@@ -94,3 +98,15 @@ zoomInButton.addEventListener('click', () => {
   }
 
 });
+
+/* Setting the ColorPicker */
+
+var ColorPicker = document.getElementById("colorpicker").value;
+
+function ColorSelection() {
+document.getElementById("colorpicker").onchange = function() {
+  ColorPicker = this.value;
+  return ColorPicker;
+}
+}
+
