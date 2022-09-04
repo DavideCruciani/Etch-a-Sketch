@@ -52,11 +52,6 @@ zoomOutButton.addEventListener('click', () => {
     })
   });
 
-} else {
-  var gridBox = document.querySelectorAll('#gridBox');
-  gridBox.forEach(box => {
-    box.removeAttribute('style');
-  });
 }
 
 });
@@ -90,11 +85,6 @@ zoomInButton.addEventListener('click', () => {
 
     });
 
-  } else {
-    var gridBox = document.querySelectorAll('#gridBox');
-    gridBox.forEach(box => {
-      box.removeAttribute('style');
-    });
   }
 
 });
